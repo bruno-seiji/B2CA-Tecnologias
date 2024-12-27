@@ -1,0 +1,56 @@
+body{
+    justify-content: center;
+
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: none;
+        width: 1270px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 10;
+  
+            #logo{
+                height: 90px;
+                align-self: center;
+               
+            }
+  
+            #menu{
+                display: flex;
+                justify-content: space-between;
+                align-self: center;
+            }
+  
+            #Contato{
+                border-radius: 10%;
+                width: 200px;
+                height: 50px;
+                align-self: center;
+                justify-self: end;
+                cursor: pointer;
+            }
+    }
+
+    #intro {
+        width: 1270px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #slides{
+        width: 1270px;
+        margin: auto;
+    }
+}
+
+//---------------------------- classes aditivas -------------------------//
+
+.absolute{
+    position:relative;
+}
+
+.m-auto{
+    margin: auto;
+}
