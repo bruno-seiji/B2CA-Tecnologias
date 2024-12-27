@@ -1,25 +1,35 @@
 body {
   justify-content: center;
 }
-body header {
+body #intro {
+  width: 1270px;
+  overflow: hidden;
+  margin: auto;
+  height: 100vh;
+}
+body #intro header {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: none;
   width: 1270px;
   box-sizing: border-box;
-  position: fixed;
   z-index: 10;
 }
-body header #logo {
-  height: 90px;
+body #intro header #logo {
+  height: 100px;
   align-self: center;
 }
-body header #menu {
+body #intro header #menu {
   display: flex;
   justify-content: space-between;
   align-self: center;
 }
-body header #Contato {
+body #intro header #menu li {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+body #intro header #Contato {
   border-radius: 10%;
   width: 200px;
   height: 50px;
@@ -27,17 +37,26 @@ body header #Contato {
   justify-self: end;
   cursor: pointer;
 }
-body #intro {
+body #intro #slides {
   width: 1270px;
-  overflow: hidden;
   margin: auto;
+  z-index: -10;
 }
-body #slides {
-  width: 1270px;
-  margin: auto;
+body #intro #slides .intro-texto {
+  top: 200px;
+  width: 40%;
+  margin: 1rem;
+  margin-left: 8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: sans-serif;
 }
 
 .absolute {
+  position: absolute;
+}
+
+.relative {
   position: relative;
 }
 
