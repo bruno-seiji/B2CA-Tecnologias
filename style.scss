@@ -1,12 +1,14 @@
 body{
     justify-content: center;
+    font-family: "Roboto", serif;
+    font-style: normal;
 
 
 #intro {
     width: 1270px;
     overflow: hidden;
     margin: auto;      
-    height: 100vh;
+    height: auto;
     
 
     header {
@@ -20,7 +22,7 @@ body{
             #logo{
                 height: 100px;
                 align-self: center;
-               
+                margin-left: 2rem;
             }
   
             #menu{
@@ -31,17 +33,24 @@ body{
                 li{
                     font-size: 1.5rem;
                     font-weight: 700;
-                    font-family: sans-serif;
+                    cursor: pointer;
+                    text-underline-offset: 10px;
                 }
+
+                li:hover{
+                    text-decoration: underline;
+                }
+
             }
   
             #Contato{
-                border-radius: 10%;
-                width: 200px;
+                border-radius: 2rem;
+                width: 150px;
                 height: 50px;
                 align-self: center;
                 justify-self: end;
                 cursor: pointer;
+                margin-right: 3rem;
             }
     }
 
@@ -50,16 +59,44 @@ body{
         margin: auto;
         z-index: -10;
 
+        img{
+            height: 720px;
+        }
+
         .intro-texto{
-            top: 200px;
+            top: 260px;
             width: 40%;
             margin: 1rem;
-            margin-left: 8rem;
+            margin-left: 10rem;
             font-size: 2rem;
             font-weight: 700;
-            font-family: sans-serif;
+            text-align: justify;
+            letter-spacing: 5px;
+            line-height: 1.3;
+
+            span{
+                letter-spacing: 2px;
+                
+            }
+
+
+
         }
     }
+}
+
+#Projetos_Segmentos{
+    margin: auto;
+    width: 1270px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+
+    img{
+        width: 100%;
+    }
+
+
 }
 
 
@@ -77,4 +114,8 @@ body{
 
 .m-auto{
     margin: auto;
+}
+
+.fit-content{
+    height: auto;
 }
