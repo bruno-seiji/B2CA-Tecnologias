@@ -1,16 +1,25 @@
+@charset "UTF-8";
 body {
   justify-content: center;
   font-family: "Roboto", serif;
   font-style: normal;
+}
+body button {
+  border-radius: 2rem;
+  width: 150px;
+  height: 50px;
 }
 body header {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: none;
   width: 1270px;
+  height: 100px;
   box-sizing: border-box;
   justify-content: space-between;
   margin: auto;
+  background-color: #eee;
+  z-index: 10;
 }
 body header #logo {
   justify-self: center;
@@ -34,17 +43,37 @@ body header #menu li:hover {
   text-decoration: underline;
 }
 body header #Contato {
-  border-radius: 2rem;
-  width: 150px;
-  height: 50px;
   align-self: center;
-  justify-self: end;
   cursor: pointer;
   justify-self: center;
 }
-body #intro {
-  width: 1270px;
+body #Intro {
   display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+  background-image: url("assets/imagens/technology.jpg"); /* Caminho da imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+body #Intro #Apresentação {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 500px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 12rem;
+  text-align: justify;
+  padding-left: 5rem;
+  line-height: 3rem;
+}
+body #Intro #Cotação {
+  margin-top: 3rem;
+  margin-left: 10rem;
+  width: 300px;
+  height: 100px;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 body #Projetos_Segmentos {
   margin: auto;
@@ -65,12 +94,22 @@ body #Projetos_Segmentos img {
   position: relative;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .m-auto {
   margin: auto;
 }
 
 .fit-content {
   height: auto;
+}
+
+.DF_box {
+  width: 1270px;
+  height: 720px;
+  margin: auto;
 }
 
 .card {

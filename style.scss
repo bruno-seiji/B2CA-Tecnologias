@@ -3,14 +3,23 @@ body{
     font-family: "Roboto", serif;
     font-style: normal;
 
+    button{
+        border-radius: 2rem;
+        width: 150px;
+        height: 50px;
+    }
+
 header {
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: none;
     width: 1270px;
+    height: 100px;
     box-sizing: border-box;
     justify-content: space-between;
     margin: auto;
+    background-color: #eee;
+    z-index: 10;
 
 
         #logo{
@@ -42,11 +51,7 @@ header {
         }
 
         #Contato{
-            border-radius: 2rem;
-            width: 150px;
-            height: 50px;
             align-self: center;
-            justify-self: end;
             cursor: pointer;
             justify-self:center;
         }
@@ -54,10 +59,37 @@ header {
 
 
 
-#intro {
-    width: 1270px;
+#Intro {
     display: grid;
-    background-image: ;
+    grid-template-rows: repeat(2,1fr);
+    overflow: hidden;
+    
+    background-image: url('assets/imagens/technology.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+
+    #Apresentação{
+        font-size: 2rem;
+        font-weight: 700;
+        width: 500px;
+        height: fit-content;
+        padding-top: 12rem;
+        text-align: justify;
+        padding-left: 5rem ;
+        line-height: 3rem;
+    }
+
+    #Cotação{
+        margin-top: 3rem;
+        margin-left: 10rem ;
+        width: 300px;
+        height: 100px;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+
 }
 
 
@@ -88,12 +120,22 @@ header {
     position: relative;
 }
 
+.fixed{
+    position: fixed;
+}
+
 .m-auto{
     margin: auto;
 }
 
 .fit-content{
     height: auto;
+}
+
+.DF_box{
+    width: 1270px;
+    height: 720px;
+    margin: auto;
 }
 
 //------------------------------ClassCompnents-------------------------------//
