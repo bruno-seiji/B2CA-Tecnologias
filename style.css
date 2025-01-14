@@ -75,10 +75,46 @@ body #Intro #Cotação {
   font-weight: 700;
   font-size: 1.5rem;
 }
+body #About_us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  width: 1270px;
+  height: 500px;
+  gap: 1rem;
+}
+body #About_us .title {
+  font-weight: 700;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column: span 2;
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+body #About_us img, body #About_us p {
+  grid-row-start: 2;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+body #About_us p {
+  grid-column-start: 2;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+body #About_us img {
+  grid-column-start: 1;
+  height: 400px;
+}
 body #Projetos_Segmentos {
   margin: auto;
   width: 1270px;
-  background-color: white;
+  height: 500px;
+  background-color: #ebecec;
   display: grid;
   grid-template-columns: repeat(4, auto);
 }
@@ -94,8 +130,11 @@ body #Projetos_Segmentos img {
   position: relative;
 }
 
-.fixed {
+.fixed_center {
   position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .m-auto {
