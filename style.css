@@ -84,44 +84,44 @@ body #About_us {
   gap: 1rem;
 }
 body #About_us .title {
-  font-weight: 700;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column: span 2;
   text-align: center;
-  justify-content: center;
-  height: 3rem;
-  font-size: 2rem;
   padding-top: 2rem;
 }
 body #About_us img, body #About_us p {
   grid-row-start: 2;
-  width: 100%;
   justify-content: center;
   align-content: center;
+  margin: auto;
 }
 body #About_us p {
   grid-column-start: 2;
   text-align: justify;
-  font-weight: 400;
   font-size: 1.5rem;
+  width: 100%;
+  line-height: 1.7rem;
 }
 body #About_us img {
   grid-column-start: 1;
   height: 400px;
+  width: 95%;
 }
 body #Projetos_Segmentos {
   margin: auto;
+  width: 100vw;
+  height: 1100px;
+  background-color: rgba(106, 109, 108, 0.096); /* Fundo vermelho com transparência */
+}
+body #Projetos_Segmentos #content {
   width: 1270px;
-  height: 500px;
-  background-color: #ebecec;
+  height: 100%;
+  border: 0.1rem dashed #000;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto, 1fr, 1fr;
 }
-body #Projetos_Segmentos img {
-  width: 100%;
-}
-
 .absolute {
   position: absolute;
 }
@@ -151,8 +151,25 @@ body #Projetos_Segmentos img {
   margin: auto;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  color: #000;
+}
+
+.carousel-item {
+  width: 800px;
+}
+
+.title {
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 2rem;
+}
+
 .card {
-  width: 250x;
+  width: 250px;
   height: 350px;
   background: white;
   border-radius: 10px;
