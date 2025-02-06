@@ -9,10 +9,9 @@
       background-size: cover;
       position: absolute;
       top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 1270px;
-      height: 1200px;
+      height: 628px;
       z-index: -10;
+
     }
 </style>
