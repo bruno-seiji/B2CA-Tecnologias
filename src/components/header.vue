@@ -1,3 +1,22 @@
+<script setup>
+  import { ref } from 'vue'; 
+  const Yscrool = ref(0);
+
+  const handleScroll = () => {
+    Yscroll.value = window.scrollY;
+  };
+
+  if (Yscrool>128){
+    console.log("naruto")
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+</script>
+
+
+
+
 
 <template>
 
