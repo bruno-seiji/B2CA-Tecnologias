@@ -48,3 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*----------------------Main---------------------------------*/
+
+.app_container{
+	width: 1270px;
+	margin: auto;
+}
