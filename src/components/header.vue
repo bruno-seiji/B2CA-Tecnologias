@@ -1,17 +1,30 @@
 <script setup>
-  import { ref } from 'vue'; 
-  const Yscrool = ref(0);
+import { ref, onMounted, onUnmounted } from 'vue';
 
-  const handleScroll = () => {
-    Yscroll.value = window.scrollY;
-  };
+const Yscroll = ref(0);
+const header = ref(null);
 
-  if (Yscrool>128){
-    console.log("naruto")
+
+const handleScroll = () => {
+  Yscroll.value = window.scrollY;
+  
+  if (Yscroll.value > 80) {
+    header.value.style.position = 'fixed';
+    header.value.classList.add ('gradient-box');
   }
+  else{
+    header.value.style.position = 'relative';
+    header.value.classList.remove ('gradient-box');
+  }
+};
 
+onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+});
 
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 
@@ -20,7 +33,7 @@
 
 <template>
 
-    <header>
+    <header ref="header">
         <div class="logo"></div>
         <div class="menu">
           <ul>
@@ -52,6 +65,7 @@ header{
     box-sizing: border-box;
     align-items: center;
     background-color: transparent;
+    
 
     .logo {
       background-image: url("../assets/logo-SF.png"); 
@@ -85,5 +99,13 @@ header{
 
 
   }
+
+
+  /*------------Especific styles----------------------------------------- */
+
+  .gradient-box {
+  background: linear-gradient(to right, white, #0cc0df);
+  
+}
 
 </style>

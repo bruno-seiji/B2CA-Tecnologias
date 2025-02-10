@@ -1,5 +1,29 @@
 <script setup>
     import TheButton from "../components/TheButton.vue"
+    import { ref, onMounted, onUnmounted } from 'vue';
+
+    const Yscroll = ref(0);
+    const intro = ref(null);
+
+
+    const handleScroll = () => {
+      Yscroll.value = window.scrollY;
+      
+      if (Yscroll.value > 80) {
+        intro.value.style.marginTop = '128px';
+      }
+      else{
+        intro.value.style.marginTop = '0px';
+      }
+    };
+
+    onMounted(() => {
+      window.addEventListener('scroll', handleScroll);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener('scroll', handleScroll);
+    });
 </script>
 
 

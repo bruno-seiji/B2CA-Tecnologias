@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+    import cards from "../components/service-card.vue"
+</script>
 
 <template>
-    <section></section>
+    <section>
+        <cards></cards>
+
+    </section>
 </template>
 
 
@@ -9,6 +14,7 @@
     section{
         width: 100%;
         height: 630px;
-        background-color: aqua;
+        border: 1rem black solid;
+        box-sizing: border-box;
     }
 </style>
