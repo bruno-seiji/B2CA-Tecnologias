@@ -65,6 +65,7 @@ header{
     box-sizing: border-box;
     align-items: center;
     background-color: transparent;
+    top: 0;
     
 
     .logo {
