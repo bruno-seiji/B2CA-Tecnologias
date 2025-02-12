@@ -1,7 +1,7 @@
 <script setup>
    defineProps({
-    text: String,
-    imageSrc:String
+    text1: String,
+    imageSrc:String,
     });
 
     import thebutton from "../components/TheButton.vue"
@@ -10,8 +10,8 @@
 
 <template>
     <div>
-        <img :src="imageSrc" >
-        <p>{{ text }}</p>
+        <img :src="imageSrc"  >
+        <p>{{ text1 }}</p>
         <thebutton class="thebutton" label="Saiba Mais"></thebutton>
     </div>
   </template>
@@ -29,7 +29,7 @@
     
     
     div {
-        background-color: #FFF;
+        background-color: rgb(255, 254, 254);
         border:gray 0.2rem solid;
         border-radius: 1rem;
         width: 350px;
@@ -59,9 +59,7 @@
         }
 
         img{
-            width: var(--img-square);
-            height: var(--img-square);
-            
+            width: 70%;
            } 
 
     }
