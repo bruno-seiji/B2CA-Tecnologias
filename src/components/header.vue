@@ -65,6 +65,7 @@ header{
     box-sizing: border-box;
     align-items: center;
     background-color: transparent;
+    
     top: 0;
     
 
@@ -93,7 +94,9 @@ header{
 
         li:hover{
           text-decoration: underline;
+          
         }
+
       }
 
     }
@@ -106,7 +109,6 @@ header{
 
   .gradient-box {
   background: linear-gradient(to right, white, #0cc0df);
-  
-}
+  }
 
 </style>

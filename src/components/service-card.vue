@@ -51,11 +51,13 @@
 
         .thebutton{
             font-size: 1rem;
+            transition: 0.5s;
         }
 
         .thebutton:hover{
             width: 250px;
             height: 55px;
+            transition: 0.5s;
         }
 
         img{
