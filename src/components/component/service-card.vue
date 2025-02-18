@@ -4,7 +4,7 @@
     imageSrc:String,
     });
 
-    import thebutton from "../components/TheButton.vue"
+    import thebutton from "../component/TheButton.vue"
 </script>
 
 
@@ -37,7 +37,7 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-content: center;
         justify-content: space-between;
         padding: 3rem;
         gap:1rem;
@@ -50,14 +50,19 @@
         }
 
         .thebutton{
-            font-size: 1rem;
-            transition: 0.5s;
+            display: flex;
+            box-sizing: border-box;
+            padding: 2rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
         }
 
         .thebutton:hover{
-            width: 250px;
-            height: 55px;
-            transition: 0.5s;
+            width: 100%;
+            height: 60px;
+            transition: 1.5s;
         }
 
         img{

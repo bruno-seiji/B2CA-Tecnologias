@@ -1,8 +1,8 @@
 <script setup>
-  import TheHeader from "../src/components/header.vue"
-  import background from "./components/background.vue";
-  import Intro from "./components/Intro.vue"
-  import Produtos from "./components/Produtos.vue";
+  import TheHeader from "../src/components/Sections/header.vue";
+  import background from "./components/component/background.vue";
+  import Intro from "../src/components/Sections/Intro.vue";
+  import Produtos from "../src/components/Sections/Produtos.vue";
 </script>
 
 <template>
@@ -17,7 +17,7 @@
 
 <style scoped>
   .produtos{
-    : 1200px;
+   width : 1200px;
     
   }
 

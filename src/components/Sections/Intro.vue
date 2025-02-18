@@ -1,5 +1,5 @@
 <script setup>
-    import TheButton from "../components/TheButton.vue"
+    import TheButton from "../component/TheButton.vue"
     import { ref, onMounted, onUnmounted } from 'vue';
 
     const Yscroll = ref(0);
@@ -64,7 +64,15 @@
         grid-row: 2;
         justify-self: start;
         align-self: center;
+        display: flex;
+        box-sizing: border-box;
+        padding: 2rem;
         font-weight: 700;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        
+
     }
 
   iframe{

@@ -1,10 +1,10 @@
 <script setup>
-    import cards from "../components/service-card.vue"
+    import cards from "../component/service-card.vue"
     import { ref } from 'vue';
 
-    const maintence_logo = ref(new URL('../assets/maintenance.png', import.meta.url).href);
-    const globo_logo = ref(new URL('../assets/globo.png', import.meta.url).href);
-    const globo_maint_logo = ref(new URL('../assets/main+site.png', import.meta.url).href);
+    const maintence_logo = ref(new URL('/assets/maintenance.png', import.meta.url).href);
+    const globo_logo = ref(new URL('/assets/globo.png', import.meta.url).href);
+    const globo_maint_logo = ref(new URL('/assets/main+site.png', import.meta.url).href);
     
 </script>
 
@@ -22,16 +22,12 @@
 <style scoped>
     section{
         width: 100%;
-<<<<<<< Updated upstream
-=======
         height: 630px;
->>>>>>> Stashed changes
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         gap: 3rem;
         padding: 3rem;
-<<<<<<< Updated upstream
         background-color: white;
         display: grid;
         grid-template-columns: auto auto auto;
@@ -43,10 +39,6 @@
             font-weight: 700;
             font-size: 3rem;
         }
-=======
-        background-color: rgb(243, 243, 243);
-
->>>>>>> Stashed changes
 
         .mt{
             margin-top: 4rem;

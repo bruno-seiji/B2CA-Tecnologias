@@ -13,10 +13,15 @@
     .button{
         border-radius: 1rem;
         cursor: pointer;
-        width: 14rem;
+        width: auto;
         height: 3rem;
         color: black;
         background-color: aqua;
         border: none;
+        box-sizing: border-box;
+        padding: 1rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
 </style>

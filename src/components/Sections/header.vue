@@ -70,7 +70,7 @@ header{
     
 
     .logo {
-      background-image: url("../assets/logo-SF.png"); 
+      background-image: url("/src/assets/logo-SF.png"); 
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; 
