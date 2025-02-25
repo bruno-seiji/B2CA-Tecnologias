@@ -49,6 +49,7 @@
   justify-content: space-between;
 
 
+
   p{
     width: 100%;
     grid-column: 1;

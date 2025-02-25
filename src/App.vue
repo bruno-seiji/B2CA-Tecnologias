@@ -3,6 +3,7 @@
   import background from "./components/component/background.vue";
   import Intro from "../src/components/Sections/Intro.vue";
   import Produtos from "../src/components/Sections/Produtos.vue";
+  import Competencias from "../src/components/Sections/competencias.vue"
 </script>
 
 <template>
@@ -10,15 +11,10 @@
     <TheHeader></TheHeader>
     <background></background>
     <Intro></Intro>
-    <Produtos class="produtos"></Produtos>
+    <Produtos></Produtos>
+    <Competencias></Competencias>
   </div>
 
 </template>
 
-<style scoped>
-  .produtos{
-   width : 1200px;
-    
-  }
-
-</style>
+<style scoped></style>
