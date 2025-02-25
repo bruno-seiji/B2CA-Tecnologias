@@ -1,10 +1,12 @@
 <script setup>
     import cards from "../component/service-card.vue"
     import { ref } from 'vue';
-
-    const maintence_logo = ref(new URL('/assets/maintenance.png', import.meta.url).href);
-    const globo_logo = ref(new URL('/assets/globo.png', import.meta.url).href);
-    const globo_maint_logo = ref(new URL('/assets/main+site.png', import.meta.url).href);
+    import maintenance from '../../assets/maintenance.png';
+    import globo from '../../assets/globo.png';
+    import globo_main from '../../assets/main+site.png';
+    const maintence_logo = ref(maintenance);
+    const globo_logo = ref(globo);
+    const globo_maint_logo = ref(globo_main);
     
 </script>
 
@@ -12,7 +14,7 @@
     <section>
         <h1>Produtos</h1>
         <cards :imageSrc="globo_logo" text1="Site" class="cards card1 mt"></cards>
-        <cards :imageSrc="globo_maint_logo" text1="Site Manutenção e Acessoria Mensal" class="cards card2 "></cards>
+        <cards :imageSrc="globo_maint_logo" text1="Site, Manutenção e Acessoria Mensal" class="cards card2 "></cards>
         <cards :imageSrc="maintence_logo" text1="Manuteção" class="cards card3 mt"></cards>
 
     </section>

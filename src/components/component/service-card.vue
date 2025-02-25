@@ -24,10 +24,7 @@
 
 
 <style scoped>
-    
-
-    
-    
+        
     div {
         background-color: rgb(255, 254, 254);
         border:gray 0.2rem solid;
@@ -57,16 +54,18 @@
             font-size: 1.5rem;
             justify-content: center;
             align-items: center;
+            align-self: center;
+            justify-self: center;
         }
 
         .thebutton:hover{
-            width: 100%;
-            height: 60px;
-            transition: 1.5s;
+            height: 20%;
+            transition: 1s;
         }
 
         img{
             width: 70%;
+            align-self: center;
            } 
 
     }
