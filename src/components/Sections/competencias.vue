@@ -31,7 +31,6 @@
 <style>
     .competencias{
         width: 1270px;
-        height: auto;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -52,7 +51,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        top: 1350px;
+        top: 1334px;
         width: 1270px;
         height: 414px;
         z-index: -10;

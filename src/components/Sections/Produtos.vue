@@ -34,7 +34,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
-        border: solid 0.5rem black;
+        
       
         
         h1{
