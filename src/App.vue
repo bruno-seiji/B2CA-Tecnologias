@@ -5,6 +5,7 @@
   import Produtos from "../src/components/Sections/Produtos.vue";
   import Competencias from "../src/components/Sections/competencias.vue";
   import Clientes from "../src/components/Sections/clientes.vue"
+  import Faleconosco from "./components/Sections/faleconosco.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@
     <Produtos></Produtos>
     <Competencias></Competencias>
     <Clientes></Clientes>
+    <Faleconosco></Faleconosco>
   </div>
 
 </template>

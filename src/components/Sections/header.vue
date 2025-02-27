@@ -65,7 +65,7 @@ header{
     box-sizing: border-box;
     align-items: center;
     background-color: transparent;
-    
+    z-index: 10;
     top: 0;
     
 
