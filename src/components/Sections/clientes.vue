@@ -1,6 +1,4 @@
-<script steup>
-    
-
+<script >
 
 </script>
 
@@ -11,7 +9,6 @@
         <div class="slider">
                        
 
-            
 
 
         </div>
@@ -30,8 +27,7 @@
 
         .slider{
             border: solid black 0.5rem;
-            width: 5000px;
-            height: 100%;
+            width: 1270px;
             box-sizing: border-box;
             position: relative;
 
