@@ -1,5 +1,5 @@
 <script setup>
-    import TheButton from "../component/TheButton.vue"
+    import TheButton from "../component/button.vue"
     import { ref, onMounted, onUnmounted } from 'vue';
 
     const Yscroll = ref(0);
@@ -33,9 +33,10 @@
       <TheButton class="the_button" label="Contate nossos Especialistas"></TheButton>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/sQ22pm-xvrE?si=oPH0jkqhRixmTqRm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
+    <div class="back_intro"></div>
 </template>
 
-<style>
+<style scoped>
     
 .Intro{
   display: grid;
@@ -82,6 +83,18 @@
   }
 
 }
+
+.back_intro{
+      background-image: url("/src/assets/background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      width: 1270px;
+      height: 628px;
+      z-index: -10;
+
+    }
 
 </style>
 

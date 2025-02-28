@@ -4,7 +4,7 @@
     imageSrc:String,
     });
 
-    import thebutton from "../component/TheButton.vue"
+    import thebutton from "./button.vue"
 </script>
 
 

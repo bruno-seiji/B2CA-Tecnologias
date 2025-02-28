@@ -53,7 +53,7 @@ onUnmounted(() => {
 
 
 
-<style>
+<style scoped>
 
 header{
     margin: auto;

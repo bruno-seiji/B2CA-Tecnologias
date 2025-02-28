@@ -28,7 +28,7 @@
 </template>
 
 
-<style>
+<style scoped>
     .competencias{
         width: 1270px;
         box-sizing: border-box;

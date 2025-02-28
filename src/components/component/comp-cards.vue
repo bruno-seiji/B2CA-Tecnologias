@@ -14,7 +14,7 @@
     </section>
 </template>
 
-<style>
+<style scoped>
     .comp_card{
         display: flex;
         flex-direction: column;

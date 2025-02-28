@@ -41,7 +41,7 @@
 
 
 
-<style>
+<style scoped> 
     .clientes{
         width: 1270px;
         height: auto;

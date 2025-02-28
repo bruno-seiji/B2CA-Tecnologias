@@ -6,11 +6,11 @@
 
 
 <template>
-    <button class="button">{{ label }}</button>
+    <button>{{ label }}</button>
 </template>
 
 <style scoped>
-    .button{
+    button{
         border-radius: 1rem;
         cursor: pointer;
         width: auto;

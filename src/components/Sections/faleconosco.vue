@@ -1,5 +1,5 @@
 <script setup>
-    import Thebutton from "../component/TheButton.vue"
+    import Thebutton from "../component/button.vue"
 </script>
 
 
@@ -23,7 +23,7 @@
 
 
 
-<style>
+<style scoped>
     
     .fale_conosco{
         width: 1270px;
