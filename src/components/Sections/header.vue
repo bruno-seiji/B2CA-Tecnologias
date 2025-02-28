@@ -25,6 +25,14 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
+
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
 </script>
 
 
@@ -34,14 +42,15 @@ onUnmounted(() => {
 <template>
 
     <header ref="header">
-        <div class="logo"></div>
+        <div class="logo" v-on:click="scrollToTop()"></div>
         <div class="menu">
           <ul>
-            <li>Produtos</li>
-            <li>Sobre</li>
-            <li>Parceiros</li>
-            <li>Localização</li>
-            <li>Contato</li>
+            <li><a v-on:click="scrollToTop()">Inicio</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#fale_conosco">Contato</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            
           </ul>
         </div>
 
@@ -76,6 +85,7 @@ header{
       background-size: contain; 
       height: 80px;
       width: 120px;
+      cursor: pointer;
     }
 
 
@@ -89,6 +99,10 @@ header{
           color: white;
           font-weight: 400;
           font-size: 1.5rem;
+          a{
+            text-decoration: none;
+            color: white;
+          }
 
         }
 
@@ -102,13 +116,6 @@ header{
     }
 
 
-  }
-
-
-  /*------------Especific styles----------------------------------------- */
-
-  .gradient-box {
-  background: linear-gradient(to right, white, #0cc0df);
   }
 
 </style>

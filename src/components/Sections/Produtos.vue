@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <section class="produtos">
+    <section class="produtos" id="produtos">
         <h1>Produtos</h1>
         <cards :imageSrc="globo_logo" text1="Site" class="cards card1 mt"></cards>
         <cards :imageSrc="globo_maint_logo" text1="Site, Manutenção e Acessoria Mensal" class="cards card2 "></cards>
@@ -34,6 +34,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
+        scroll-margin-top: 128px;
         
       
         

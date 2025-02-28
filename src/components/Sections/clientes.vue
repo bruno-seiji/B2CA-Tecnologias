@@ -23,7 +23,7 @@
 </script>
 
 <template>
-    <section class="clientes">
+    <section id="clientes" class="clientes">
         <h2>Clientes</h2>
         <p>Projetos com gigantes do mercado</p>
         <div class="slider">
@@ -51,6 +51,7 @@
         gap: 1rem;
         padding: 1rem;
         z-index: -1;
+        scroll-margin-top: 128px;
         
         h2{
             font-size: 3rem;

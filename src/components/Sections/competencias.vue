@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <section class="competencias"> 
+    <section id="competencias" class="competencias"> 
         <cards2 :imageSrc="inov_logo" text1="Inovação" text2= "Atua com as mais recentes tecnologias do mercado" class="card2"></cards2>
         <cards2 :imageSrc="prod_logo" text1="Produtividade" text2= "Melhora resultado e desempenho da sua empresa" class="card2"></cards2>
         <cards2 :imageSrc="empat_logo" text1="Empatia" text2= "Coloca-se no lugar do cliente" class="card2"></cards2>

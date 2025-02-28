@@ -4,7 +4,7 @@
 
 
 <template>
-    <section class="fale_conosco">
+    <section id="fale_conosco" class="fale_conosco">
         <h2>Fale Conosco</h2>
         <p>Quer saber o que podemos fazer para otimizar a sua empresa? Consulte agora um especialista.</p>
         <input type="text" placeholder="Nome">
@@ -32,6 +32,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        scroll-margin-top: 128px;
     
         h2{
             text-align: center;

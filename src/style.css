@@ -42,3 +42,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*-------------Globals------------------------*/
+
+.gradient-box {
+	background: linear-gradient(to right, white, #0cc0df);
+	}
+html {
+	scroll-behavior: smooth;
+}
