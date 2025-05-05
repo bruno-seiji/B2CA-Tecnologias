@@ -64,6 +64,35 @@ function scrollToTop() {
 
 <style scoped>
 
+@media screen and (min-width: 400px) {
+  html{
+    overflow: hidden;
+  }
+
+  body{
+    width: 100vw;
+ 
+    header {
+      width: 100vw;
+      margin: 0;
+      padding: 1rem 0 1rem 0;
+      justify-content: center;
+
+      .menu{
+        display: none;
+      }
+
+      .logo{
+        margin: auto;
+      }
+    }
+  
+}
+
+}
+
+
+
 header{
     margin: auto;
     width: 1270px;
