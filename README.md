@@ -6,4 +6,4 @@ A aplicação conta com estilização personalizada usando CSS puro, além de es
 
 Um dos destaques do projeto é a integração do Vue.js Slide Pack, um pacote de transições e slides que foi utilizado para criar efeitos de navegação entre seções com animações suaves e elegantes, melhorando a estética e usabilidade da página.
 
-Segue link (https://chipper-gumdrop-9088d1.netlify.app/)
+Segue link: https://b2ca.netlify.app
